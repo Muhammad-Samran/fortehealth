@@ -1,0 +1,16 @@
+@import "../../styles/themes/mixins";
+@import "../../styles/themes/Variables.scss";
+
+
+.parent{
+    h4{
+        @include main_heading;
+        margin-bottom: 30px;
+    }
+    iframe{
+        @media screen and (max-width: 768px) {
+            width: 250px;
+            height: auto;
+          }
+    }
+}

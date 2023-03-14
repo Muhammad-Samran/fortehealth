@@ -1,0 +1,17 @@
+@import "../../../styles/themes/Variables.scss";
+.select {
+  label {
+    font-family: $Poppins;
+    font-style: normal;
+
+    font-size: 15px;
+    line-height: 22px;
+    /* identical to box height */
+    display: block;
+
+    letter-spacing: 0.025em;
+
+    color: black;
+    margin-bottom: 4px;
+  }
+}

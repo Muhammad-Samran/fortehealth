@@ -1,0 +1,84 @@
+@import "../../styles/themes/mixins";
+@import "../../styles/themes/Variables.scss";
+
+.parent {
+  h4 {
+    @include main_heading;
+    margin-bottom: 30px;
+  }
+  .parent_img_box {
+    .img_box {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 2px solid $darkgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        padding-top: 3px;
+        width: 116px;
+        height: 116px;
+        border-radius: 50%;
+      }
+    }
+    .content_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h5 {
+        @include subHeading;
+      }
+      h6 {
+        @include paragraph;
+      }
+    }
+    .profileEdit_box {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      img {
+        cursor: pointer;
+      }
+    }
+    .profile_input_field {
+      input {
+        width: 100px;
+      }
+    }
+  }
+  .parent_input {
+    margin-top: 20px;
+    @media screen and (max-width: 480px) {
+      width: 230px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .profile_btn {
+    // width: 290px;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    button {
+      @include buttonstyle;
+      width: 160px;
+      @media screen and (max-width: 480px) {
+        width: 230px;
+      }
+    }
+  }
+}
+
+.profileDetails {
+  display: flex;
+  //   justify-content: space-between;
+}
+.marginBottom {
+  margin-bottom: 10px;
+}
+.error {
+  color: red;
+}

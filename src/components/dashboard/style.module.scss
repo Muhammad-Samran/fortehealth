@@ -1,0 +1,64 @@
+@import "../../styles/themes/mixins";
+@import "../../styles/themes/Variables.scss";
+
+.parent {
+  @media screen and (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  h4 {
+    @include main_heading;
+    margin-bottom: 30px;
+  }
+
+  .card_parent {
+    width: 100%;
+    // @media screen and (min-width: 2559px) {
+    //     width: 70%;
+    //   }
+
+    .main_box {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $background_clr;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      .img_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 10px;
+        max-width: 150px;
+        height: 130px;
+        border-radius: 10px;
+        @media screen and (max-width: 1024px) {
+          width: 170px;
+        }
+      }
+      .content {
+        h5 {
+          @include subHeading;
+        }
+        h6 {
+          @include paragraph;
+          color: #868484;
+          text-align: left;
+        }
+        .content_img {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          img {
+            width: 15px;
+          }
+        }
+      }
+    }
+  }
+}
